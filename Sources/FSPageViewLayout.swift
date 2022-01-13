@@ -69,9 +69,6 @@ class FSPagerViewLayout: UICollectionViewLayout {
         }()
         
         self.actualInteritemSpacing = {
-            if let transformer = pagerView.transformer {
-                return transformer.proposedInteritemSpacing()
-            }
             return pagerView.interitemSpacing
         }()
         self.scrollDirection = pagerView.scrollDirection
